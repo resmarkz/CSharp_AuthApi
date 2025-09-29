@@ -1,0 +1,18 @@
+# Build outputs
+bin/
+obj/
+publish/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+appsettings.*.json
+!appsettings.json
+
+# User secrets
+secrets.json
+
+# Database files
+*.db
