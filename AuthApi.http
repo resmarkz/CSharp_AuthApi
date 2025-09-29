@@ -1,6 +1,24 @@
 @AuthApi_HostAddress = http://localhost:5225
 
+### Default test endpoint
 GET {{AuthApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
-###
+### Register a new user
+POST {{AuthApi_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "Password123!",
+  "email": "testuser@example.com"
+}
+
+### Login with credentials
+POST {{AuthApi_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "Password123!"
+}
