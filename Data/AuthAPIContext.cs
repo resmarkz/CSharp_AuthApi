@@ -7,6 +7,6 @@ namespace AuthApi.Data
     {
         public AuthAPIContext(DbContextOptions<AuthAPIContext> options): base(options){}
 
-        DbSet<User> Users { get; set; }
+        public DbSet<User> Users { get; set; } = null!;
     }
 }
